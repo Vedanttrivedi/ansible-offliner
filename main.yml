@@ -1,0 +1,10 @@
+---
+- hosts: my_servers
+  become: yes
+  become_method: sudo
+  become_user: root
+  vars:
+    ansible_become_pass: root
+  roles:
+    - mysqler
+
